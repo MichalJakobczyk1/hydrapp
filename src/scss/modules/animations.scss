@@ -1,0 +1,30 @@
+@keyframes add {
+  0% {
+    transform: translateY(220px);
+  }
+  33% {
+    transform: translateY(148px);
+  }
+  66% {
+    transform: translateY(74px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes remove {
+    0% {
+      transform: translateY(0px);
+    }
+    33% {
+      transform: translateY(74px);
+    }
+    66% {
+      transform: translateY(148px);
+    }
+    100% {
+      transform: translateY(220px);
+    }
+  }
+  
