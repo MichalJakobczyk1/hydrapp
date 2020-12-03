@@ -1,13 +1,49 @@
 @import "~normalize.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/stylereset.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.body {
+  background-color: #3767ad;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__header {
+    &-h1 {
+      color: #ffffff;
+      font-size: 55px;
+      margin-top: 87px;
+      margin-bottom: 68px;
+    }
+  }
+  &__glass {
+    overflow: hidden;
+    font-size: 112px;
+  }
+  &__button {
+    &--add {
+      width: 216px;
+      height: 47px;
+      margin-top: 48px;
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 18px;
+      border-radius: 4px;
+      -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    &--delete {
+      width: 184px;
+      height: 23px;
+      margin-top: 37px;
+      color: #f5e5e7;
+      font-size: 14px;
+    }
+  }
 }
