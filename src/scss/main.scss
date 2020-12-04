@@ -15,27 +15,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &__header {
-    &-h1 {
-      color: #ffffff;
-      font-size: 55px;
-      margin-top: 87px;
-      margin-bottom: 68px;
-    }
+  &__heading {
+    color: #ffffff;
+    font-size: 55px;
+    margin-top: 87px;
+    margin-bottom: 68px;
   }
   &__glass {
-    overflow: hidden;
-    font-size: 112px;
-    &--water {
-      transform: translateY(220px);
-    }
-    &--add {
-      animation: add 2s linear 1 forwards;
-    }
-    &--remove {
-      animation: remove 2s linear 1 forwards;
+    background-image: url("../../public/waterGlass.svg");
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-counter {
+      font-size: 112px;
     }
   }
+
   &__button {
     &--add {
       width: 216px;
